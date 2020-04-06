@@ -1,0 +1,56 @@
+/* device/browse from 1023px to 1200px*/
+/* from big tablets to 1200px*/
+@media only screen and (max-width: 1200px) {
+    .hero-text-box{
+    width: 100%;
+    padding: 0 2%  /*padding 0 on top and bottom, 2% on left and right*/
+    }
+    
+    .row { padding: 0 2%; }
+    
+}
+
+/* device/browse from 760px to 1023px*/
+/* from small to big tablets*/
+@media only screen and (max-width: 1023px) {
+    body {font-size: 18px} /*since initial font is 20px, make 18px*/
+    section {padding: 68px 0;}
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .icon-small {width: 20px;}
+    
+}
+
+/*device/browser from 481px to 767px*/
+/*small phones to small tablets*/
+@media only screen and (max-width: 767px) {
+    body {font-size: 16px;}
+    section {padding: 30px 0;}
+    
+    .row,
+    .hero-text-box {padding: 0 4%;}
+    
+    .col {
+        width: 100%; /*all column will not be side by side but stacked*/
+        margin: 0 0 4% 0% 
+    } 
+    main-nav {display: none;} /*This will hide the main navigation*/
+    
+    h1 { font-size: 180%;}
+    h2 { font-size: 150%;}
+    
+    .long-copy {
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+}
+
+/*rules apply when width of device/browser is less than 480px*/
+/*small phones*/
+@media only screen and (max-width: 480px) {
+    section {padding: 25px 0;}
+}
